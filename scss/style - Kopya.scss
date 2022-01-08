@@ -1,0 +1,537 @@
+@import 'config'; /* global değerler */
+@import 'header'; /* header değerleri */
+@import 'sidebar'; /* sidebar değerleri */
+@import 'footer'; /* footer değerleri */
+
+
+* {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+body {
+    background-color: $background-grey;
+}
+    
+.middle-section {
+    display: flex;
+    flex-direction: row;
+    padding-left: 8px;
+    background-image: linear-gradient(#ffffff, #edecec 3%);
+    /*position: absolute;*/
+    /*top: 42px;*/
+
+    .page-wrapper {
+        width: 100%;
+        background-color: transparent;
+
+        .page-top {
+            width: 100%;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+
+            .tabs {
+                width: 77%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .tabs-right {
+                    justify-content: flex-end;
+
+                    .tab-wrapper ~ .tab-wrapper {
+                        border-right: 1px #a7d7f9 solid;
+                    }
+                }
+            }
+
+            .tabs-main {
+                display: flex;
+                flex-direction: row;
+
+                .tab-wrapper {
+                    width: auto;
+                    height: auto;
+                    display: inline-block;
+                    background-image: linear-gradient(white, #77c1f6);
+                    position: relative;
+
+                    .tab-item {
+                        height: auto;
+                        padding: 0;
+
+                        & :hover {
+                            text-decoration: underline;
+                        }
+
+                        a {
+                            color: $link-color;
+                            font-size: 0.8125em;
+                            text-decoration: none;
+                            text-align: center;
+                            padding: 0 7px;
+                            margin: 0;
+                            line-height: 40px;
+                            display: inline-block;
+                            background-image: linear-gradient(white, #e4f4ff 40%);
+                            border-bottom: 1px #a7d7f9 solid;
+
+                        }     
+
+                        .active {
+                            color: $text-color;
+                            background-image: linear-gradient(white);
+                            border-bottom: 1px white solid;
+                        }                                        
+                    }
+                 
+                    .active-tab {
+                        padding: 0 1px;
+
+                            :hover {
+                                text-decoration: none;
+                            }                        
+                    }
+                
+                }                
+            }
+
+            .tabs-search {
+                width: 23%;
+                margin:0 14px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+
+                input {
+                    width: 100%;
+                    height: 2.15384615em;
+                    border: 1px solid #a2a9b1;
+                    border-radius: 2px;
+                    padding: 2px 4px;
+                    font-family: inherit;
+                    font-size: 0.8125em;
+
+                    :focus {
+                        outline: 0;
+                        border-color: #3366cc;
+                        box-shadow: inset 0 0 0 1px #3366cc;
+                        }
+                    }
+                }
+
+                .search-button {
+                    width: 30px;
+                    height: auto;
+                    display: inline-block;
+                    position: absolute;
+
+                    .fas {
+                        text-align: center;
+                        opacity: 0.67;
+                        }
+                    }
+            }
+
+        .page-bottom {
+                padding: 1.25em 1.5em 1.5em 1.5em;
+                border: 1px solid #a7d7f9;
+                background-color: white;
+                border-right-width: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .welcome {
+                    width: 100%;
+                    height: auto;
+                    border: 1px #ddd solid;
+                    background-color: #f9f9f9;
+                    line-height: 1.6;
+                    display: flex;
+                    flex-direction: row;
+
+                    .welcome-left {
+                        width: 60%;
+                        text-align: center;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+
+                        .welcome-notification {
+                            margin: 0.4em;
+                            width: 22em;
+
+                            h2 {
+                                font-size: 1.62em;
+                                line-height: 36px;
+                                font-weight: 400;
+                            }
+
+                            p {
+                                font-size: 0.8em;
+                                line-height: 22px;
+                                font-weight: 400;
+                            }
+
+                            a {
+                                color: $link-color;
+                                text-decoration: none;
+                            }
+
+                            a:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+
+                    .welcome-right {
+                        width: 40%;
+                        margin: auto;
+
+                        .welcome-list {
+                            width: 90%;
+                            margin-left: auto;
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+
+                            .welcome-list-item a {
+                                color: $link-color;
+                                text-decoration: none;
+                                font-size: 0.8em;
+                            }
+
+                            .welcome-list-item a:hover {
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+
+                .updates {
+                    width: 100%;
+                    height: auto;
+                    background-color: transparent;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 5px;
+    
+
+                    .updates-left {
+                        width: 55%;
+                        border: 1px #cef2e0 solid;
+                        background: #f5fffa;
+                        height: auto;
+                        padding-bottom: 3em;
+
+                        .articles-title {
+                            background: #cef2e0;
+                            border: 1px #a3bfb1 solid;
+                        }
+                    }
+
+                    .updates-right {
+                        width: 45%;
+                        border: 1px #cedff2 solid;
+                        background: #f5faff;
+                        height: auto;
+
+
+                    }
+                }
+
+                .features {
+                    width: 100%;
+                    height: auto;
+                    border: 1px #ddcef2 solid;
+                    background: #faf5ff;
+
+                    .features-title {
+                        background: #ddcef2;
+                        border: 1px #afa3bf solid;
+                    }
+
+                    .features-bottom {
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0.7em;
+
+                        .features-img {
+                            width: 40em;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+
+                        .features-text {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                }
+
+                .other-areas {
+                    width: 100%;
+                    height: auto;
+                    border: 1px #e2e2e2 solid;
+                    display: flex;
+                    flex-direction: column;
+                    gap:5px;
+
+                    .other-areas-list {
+                        width: 100%;
+                        height: 200px;
+                    }
+
+                    .sister-projects {
+                        width: 100%;
+                        height: auto;
+
+                        .sister-projects-text {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1em;
+
+                            .projects-all {
+                                display: flex;
+                                flex-direction: row;
+                                gap: 15px;
+                                align-items: center;
+                                justify-content: flex-start;
+                                padding: 1.4px 8.4px;
+                            }
+                        }
+                    }
+
+                    .wikipedia-languages {
+                        width: 100%;
+                        height: auto;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 0.2em;
+                        
+                        .wikipedia-languages-info {
+                            margin-top: 0.7em;
+                        }
+                    }
+                }
+            }
+        }
+
+        .section-wrappers {
+            padding: 0.525em;
+            display: flex;
+            flex-direction: column;
+            gap: 0.6em;        
+        }
+
+        .bottom-titles {
+            padding: 0.3em 0.5em;
+            ul {
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+            }
+        }
+
+        .fa-circle {
+            display: inline;
+            font-size: 4px;
+        }
+
+        .section-info { 
+
+            p {
+                color: $text-color;
+                font-size: 0.875em;
+                line-height: 1.7;
+            }
+        
+            a {
+                color: $link-color;
+                text-decoration: none;
+            }
+            
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+
+
+        .article-two-list {
+            padding-left: 1.5em;
+
+            .article-portrait {
+                width: 25%;
+                float: right;
+                margin-left: 0.2em;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    
+}
+    
+.news-title {
+    background: #cedff2;
+    border: 1px #a3b0bf solid;
+}
+
+.news-one-text ul, .news-two-text ul {
+    padding-left: 1.5em;
+}
+
+.news-portraits {
+    width: 25%;
+    float: right;
+    margin-left: 0.2em;
+
+    img {
+        width: 100%;
+    }
+}
+   
+.section-info ul {
+    margin-top: 0.3em;
+}
+
+.article-bottom {
+    margin-top: 0.5em;
+
+    ul {
+        display: inline;
+
+        li {
+            display: inline;
+
+            p {
+                display: inline;
+                font-weight: bold;
+            }
+        }
+
+        li ~ li::before {
+            content: " · ";
+            font-weight: bold;
+        } 
+    }
+}
+
+.article-left {
+    text-align: right;
+}
+
+.article-right {
+    text-align: left;
+}
+
+.other-areas-title, .sister-projects-title, .wikipedia-languages-title {
+    background: #eee;
+    border: 1px #ddd solid;
+}
+
+.other-areas-text ul {
+    padding-left: 1.5em;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+}
+
+.single-project {
+    display: flex;
+    flex-direction: row;
+    gap: 1.2em;
+}
+
+.project-img {
+    max-width: 40px;
+    display: flex;
+    align-items: center;
+
+    a:hover {
+        cursor: pointer;
+    }
+
+    .img {
+        width: 100%;
+    }
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+}   
+
+.project-title p {
+    font-weight: bold;
+}
+
+.border-wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    padding-top: 1em;
+    margin: auto;
+
+    .border-text {
+        width: 21.75em;
+        text-align: center;
+
+        p {
+            padding: 0 1em;
+        }
+    }
+
+}
+
+.border-line {
+    width: 100%;
+    height: 1px;
+    background-color: #c8ccd1;
+    display: flex;
+    align-self: center;
+}    
+
+.countries {
+    text-align: center;
+
+    ul {
+        display: inline;
+
+        li {
+            display: inline;
+ 
+            p {
+                display: inline;        
+     
+            }
+            
+        }
+        li ~ li::before {
+            content: " · ";
+            font-weight: bold;
+        } 
+
+    }    
+ 
+}

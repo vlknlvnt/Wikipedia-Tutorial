@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="scss/normalize.css">
+    <link rel="stylesheet" href="scss/style.css">
+    <link href="assets\fontawesome-free-5.15.4-web\css\all.css" rel="stylesheet"> <!-- font-awesome -->
+    <title>Wikipedia Deneme</title>
+</head>
+<body>
+
+    <!-- header ve navigation başladı -->
+    <header class="header">
+        <div class="header-main">
+            <div class="header-main-top">
+                <div class="header-list">
+                    <span class="profile-icon"></span>
+                    <a id="login-info">Not logged in</a>
+                    <a href="https://en.wikipedia.org/wiki/User_talk:176.240.200.178">Talk</a> 
+                    <a href="https://en.wikipedia.org/wiki/Special:Contributions/176.240.200.178">Contributions</a>
+                    <a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Talk%3AMain+Page">Create Account</a>
+                    <a href="https://en.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Talk%3AMain+Page">Log in</a>   
+                </div>
+                 
+            </div>
+
+            <div class="header-main-bottom">
+                <div class="search-wrapper">
+                    <input type="search" placeholder="Search Wikipedia">
+                    <a href="" role="button" class="search-button"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <!-- header ve navigation bitti -->
+
+    <section class="middle-section">
+   
+        <div class="page-wrapper">
+            <div class="sidebar">
+
+                <!-- sidebar logo başladı -->
+                <div class="sidebar-logo-top">
+                    <a href="https://tutorial.volkanleventsoylu.com/wikideneme/index.html"><img src="https://en.wikipedia.org/static/images/project-logos/enwiki-2x.png" alt=""></a>
+                </div>
+                <!-- sidebar logo bitti -->
+
+                <!-- sidebar menu başladı -->
+                <div class="sidebar-info">
+                    <div class="sidebar-info-inner">
+                        <div class="info-tab main-info">
+                            <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Wikipedia:Contents">Contents</a>    
+                            <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Main_Page">Main page</a>    
+                            <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Portal:Current_events">Current events</a>    
+                            <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Archery_at_the_2019_European_Games_%E2%80%93_Men%27s_individual_recurve">Random article</a>    
+                            <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</a>    
+                            <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact us</a>    
+                            <a class="sidebar-tab-item" href="https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=TR&uselang=en&utm_medium=sidebar&utm_source=donate&utm_campaign=C13_en.wikipedia.org">Donate</a>    
+                        </div>
+                        <div class="info-tab contribute">
+                            <div class="info-title">
+                                <div class="title-text"><h3>Contribute</h3></div>                                
+                            </div>
+                            <div class="info-link">
+                               <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Help:Contents">Help</a>    
+                                <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Help:Introduction">Learn to edit</a>    
+                                <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal">Community portal</a>    
+                                <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Special:RecentChanges?hidebots=1&hidecategorization=1&hideWikibase=1&limit=50&days=7&urlversion=2">Recent changes</a>    
+                                <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Wikipedia:File_Upload_Wizard">Upload file</a>   
+                            </div>
+                              
+                        </div>
+                        <div class="info-tab tools">
+                            <div class="info-title">
+                                <div class="title-text"><h3>Tools</h3></div>                                
+                            </div>
+                            <div class="info-link">
+                                <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Special:WhatLinksHere/Main_Page">What links here</a>    
+                                <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Special:RecentChangesLinked?hidebots=1&hidecategorization=1&hideWikibase=1&target=Main_Page&limit=50&days=7&urlversion=2">Related changes</a>    
+                                <a class="sidebar-tab-item" href="https://en.wikipedia.org/wiki/Special:SpecialPages">Special pages</a>    
+                                <a class="sidebar-tab-item" href="https://en.wikipedia.org/w/index.php?title=Main_Page&oldid=1004593520">Permanent link</a>    
+                                <a class="sidebar-tab-item" href="https://en.wikipedia.org/w/index.php?title=Main_Page&action=info">Page information</a>   
+                                <a class="sidebar-tab-item" href="https://www.wikidata.org/wiki/Q5296">Wikidata item</a>
+                            </div>
+                        </div>
+                        <div class="info-tab info-export">
+                            <div class="info-title">
+                                <div class="title-text"><h3>Print/RExport</h3></div>                                
+                            </div>
+                            <div class="info-link">
+                                <a class="sidebar-tab-item" href="https://www.mediawiki.org/w/index.php?title=Special:DownloadAsPdf&page=MediaWiki&action=show-download-screen">Download as PDF</a>    
+                                <a class="sidebar-tab-item" href="https://www.mediawiki.org/wiki/MediaWiki">Printable version</a>    
+                            </div>
+                        </div>
+                        <div class="info-tab other-projects">
+                            <div class="info-title">
+                                <div class="title-text"><h3>In other projects</h3></div>                                
+                            </div>
+                            <div class="info-link">
+                                <a class="sidebar-tab-item" href="https://commons.wikimedia.org/wiki/Main_Page">Wikimedia Commons</a>
+                                <a class="sidebar-tab-item" href="https://www.mediawiki.org/wiki/MediaWiki">MediaWiki</a>
+                                <a class="sidebar-tab-item" href="https://meta.wikimedia.org/wiki/Main_Page">Meta-Wiki</a>
+                                <a class="sidebar-tab-item" href="https://wikisource.org/wiki/Main_Page">Multilingual Wikisource</a>
+                                <a class="sidebar-tab-item" href="https://species.wikimedia.org/wiki/Main_Page">Wikispecies</a>
+                                <a class="sidebar-tab-item" href="https://en.wikibooks.org/wiki/Main_Page">Wikibooks</a>
+                                <a class="sidebar-tab-item" href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a>                              
+                                <a class="sidebar-tab-item" href="https://wikimania.wikimedia.org/wiki/Wikimania">Wikimania</a>
+                                <a class="sidebar-tab-item" href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a>
+                                <a class="sidebar-tab-item" href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a>
+                                <a class="sidebar-tab-item" href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a>
+                                <a class="sidebar-tab-item" href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a>
+                                <a class="sidebar-tab-item" href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a>
+                                <a class="sidebar-tab-item" href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a>
+                            </div>
+                        </div>
+                        <div class="info-tab languages">
+                            <div class="languages-modal" id="languages-modal">
+                                <div class="modal-wrapper">
+                                    <div class="modal-top">
+                                        <div class="modal-left">
+                                            <div class="settings-title">
+                                                <h2>Language settings</h2>
+                                            </div>
+                                            <div class="settings-options">
+                                                <div class="display">
+                                                    <button class="settings-buttons selected-button" id="displayBtn"><p>Display</p> 
+                                                        <p class="btn-bottom">Set language used for menus and fonts.</p>
+                                                    </button>
+                                                </div>
+                                                <div class="input">
+                                                    <button class="settings-buttons" id="inputBtn"><p>Input</p>
+                                                    <p class="btn-bottom">Writing in a different language?</p>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div class="close-modal">
+                                                <div class="modal-content">
+                                                    <span class="close"><i class="fas fa-times"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-right">
+                                            <div class="button-options">
+                                                <div class="button-options-border"></div>
+                                                <div class="button-options-mid">
+                                                    <button class="mid-buttons selected-button-option" id="language-btn"><p>Language</p></button>
+                                                    <button class="mid-buttons" id="font-btn"><p>Fonts</p></button>
+                                                </div>
+                                                <div class="button-options-border"></div>
+                                            </div>
+                                            <div class="option-item option-language" id="option-language">
+                                                <h4><span style="font-weight: bold;">Display language:</span> English (same as content)</h4>
+                                                <p>Log in to select a different language for menus.</p>
+                                            </div>
+                                            <div class="option-item option-text" id="option-text">
+                                                <h4><span style="font-weight: bold;">Font settings</span></h4>
+                                                <div class="option-text-input">
+                                                    <label><input type="checkbox" name="" id=""><p><span style="font-weight: bold;">Download fonts when needed </span> Download missing fonts automatically and allow selection of preferred fonts. <a href="https://www.mediawiki.org/wiki/Universal_Language_Selector/WebFonts">More information</a>.</p></label> 
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="option-item option-settings" id="option-settings">
+                                                <h4><span style="font-weight: bold;">Input Settings</span></h4>
+                                                <p>Input tools are disabled.</p>
+                                                <button class="input-enable-btn">Enable Input Tools</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-bottom">
+                                        <div class="apply-btn-wrapper">
+                                            <a class="apply-btn" href="" role="button">Cancel</a>
+                                            <a class="apply-btn selected-apply-btn" href="" role="button">Apply Settings</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="info-title">
+                                <div class="title-text">
+                                    <h3>Languages</h3>
+                                    <button id="modalBtn">
+                                        <i class="fas fa-cog"></i>
+                                    </button>
+                                </div>                             
+                            </div>                          
+                            <div class="info-link">
+                                <a class="sidebar-tab-item" href="https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D9%8A%D8%A9">العربية</a>    
+                                <a class="sidebar-tab-item" href="https://bn.wikipedia.org/wiki/%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A7%E0%A6%BE%E0%A6%A8_%E0%A6%AA%E0%A6%BE%E0%A6%A4%E0%A6%BE">বাংলা</a>   
+                                <a class="sidebar-tab-item" href="https://bg.wikipedia.org/wiki/%D0%9D%D0%B0%D1%87%D0%B0%D0%BB%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Български</a>    
+                                <a class="sidebar-tab-item" href="https://bs.wikipedia.org/wiki/Po%C4%8Detna_strana">Bosanski</a>                                 
+                                <a class="sidebar-tab-item" href="https://ca.wikipedia.org/wiki/Portada">Català</a>    
+                                <a class="sidebar-tab-item" href="https://cs.wikipedia.org/wiki/Hlavn%C3%AD_strana">Čeština</a>                                 
+                                <a class="sidebar-tab-item" href="https://da.wikipedia.org/wiki/Forside">Dansk</a>                                   
+                                <a class="sidebar-tab-item" href="https://de.wikipedia.org/wiki/Wikipedia:Hauptseite">Deutsch</a>                                 
+                                <a class="sidebar-tab-item" href="https://et.wikipedia.org/wiki/Vikipeedia:Esileht">Eesti</a>                                   
+                                <a class="sidebar-tab-item" href="https://eo.wikipedia.org/wiki/Vikipedio:%C4%88efpa%C4%9Do">Ελληνικά</a>                                 
+                                <a class="sidebar-tab-item" href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Español</a>                                   
+                                <a class="sidebar-tab-item" href="https://eo.wikipedia.org/wiki/Vikipedio:%C4%88efpa%C4%9Do">Esperanto</a>                                 
+                                <a class="sidebar-tab-item" href="https://eu.wikipedia.org/wiki/Azala">Euskara</a>                                   
+                                <a class="sidebar-tab-item" href="https://fa.wikipedia.org/wiki/%D8%B5%D9%81%D8%AD%D9%87%D9%94_%D8%A7%D8%B5%D9%84%DB%8C">فارسی</a>                                 
+                                <a class="sidebar-tab-item" href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal">Français</a>                                   
+                                <a class="sidebar-tab-item" href="https://gl.wikipedia.org/wiki/Portada">Galego</a>                                 
+                                <a class="sidebar-tab-item" href="https://ko.wikipedia.org/wiki/%EC%9C%84%ED%82%A4%EB%B0%B1%EA%B3%BC:%EB%8C%80%EB%AC%B8">한국어</a>                                  
+                                <a class="sidebar-tab-item" href="https://hr.wikipedia.org/wiki/Glavna_stranica">Hrvatski</a>                                 
+                                <a class="sidebar-tab-item" href="https://id.wikipedia.org/wiki/Halaman_Utama">Bahasa Indonesia</a>                                   
+                                <a class="sidebar-tab-item" href="https://it.wikipedia.org/wiki/Pagina_principale">Italiano</a>                                 
+                                <a class="sidebar-tab-item" href="https://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%95%D7%93_%D7%A8%D7%90%D7%A9%D7%99">עברית</a>                                   
+                                <a class="sidebar-tab-item" href="https://ka.wikipedia.org/wiki/%E1%83%9B%E1%83%97%E1%83%90%E1%83%95%E1%83%90%E1%83%A0%E1%83%98_%E1%83%92%E1%83%95%E1%83%94%E1%83%A0%E1%83%93%E1%83%98">ქართული</a>                                 
+                                <a class="sidebar-tab-item" href="https://lv.wikipedia.org/wiki/S%C4%81kumlapa">Latviešu</a>  
+                                <a class="sidebar-tab-item" href="https://lt.wikipedia.org/wiki/Pagrindinis_puslapis">Lietuvių</a>                                 
+                                <a class="sidebar-tab-item" href="https://hu.wikipedia.org/wiki/Kezd%C5%91lap">Magyar</a>                                   
+                                <a class="sidebar-tab-item" href="https://mk.wikipedia.org/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Македонски</a>                                 
+                                <a class="sidebar-tab-item" href="https://ms.wikipedia.org/wiki/Laman_Utama">Bahasa Melayu</a>                                   
+                                <a class="sidebar-tab-item" href="https://nl.wikipedia.org/wiki/Hoofdpagina">Nederlands</a>                                 
+                                <a class="sidebar-tab-item" href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8">日本語</a>  
+                                <a class="sidebar-tab-item" href="https://no.wikipedia.org/wiki/Portal:Forside">Norsk bokmål</a>                                 
+                                <a class="sidebar-tab-item" href="https://nn.wikipedia.org/wiki/Hovudside">Norsk nynorsk</a>                                   
+                                <a class="sidebar-tab-item" href="https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna">Polski</a>                                 
+                                <a class="sidebar-tab-item" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal">Português</a>                                   
+                                <a class="sidebar-tab-item" href="https://ro.wikipedia.org/wiki/Pagina_principal%C4%83">Română</a>                                 
+                                <a class="sidebar-tab-item" href="https://ru.wikipedia.org/wiki/%D0%97%D0%B0%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D0%B0">Русский</a>  
+                                <a class="sidebar-tab-item" href="https://simple.wikipedia.org/wiki/Main_Page">Simple English</a>                                   
+                                <a class="sidebar-tab-item" href="https://sk.wikipedia.org/wiki/Hlavn%C3%A1_str%C3%A1nka">Slovenčina</a>                                 
+                                <a class="sidebar-tab-item" href="https://sl.wikipedia.org/wiki/Glavna_stran">Slovenščina</a>                                   
+                                <a class="sidebar-tab-item" href="https://sr.wikipedia.org/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B0">Српски / srpski</a>                                 
+                                <a class="sidebar-tab-item" href="https://sh.wikipedia.org/wiki/Glavna_stranica">Srpskohrvatski / српскохрватски</a>                                  
+                                <a class="sidebar-tab-item" href="https://sr.wikipedia.org/wiki/%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B0">Suomi</a>                                   
+                                <a class="sidebar-tab-item" href="https://sv.wikipedia.org/wiki/Portal:Huvudsida">Svenska</a>                                 
+                                <a class="sidebar-tab-item" href="https://th.wikipedia.org/wiki/%E0%B8%AB%E0%B8%99%E0%B9%89%E0%B8%B2%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%81">ไทย</a>                                   
+                                <a class="sidebar-tab-item" href="https://tr.wikipedia.org/wiki/Anasayfa">Türkçe</a>                                 
+                                <a class="sidebar-tab-item" href="https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B2%D0%BD%D0%B0_%D1%81%D1%82%D0%BE%D1%80%D1%96%D0%BD%D0%BA%D0%B0">Українська</a>      
+                                <a class="sidebar-tab-item" href="https://vi.wikipedia.org/wiki/Trang_Ch%C3%ADnh">Tiếng Việt</a>                                   
+                                <a class="sidebar-tab-item" href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5">中文</a>                                 
+                                <a class="sidebar-tab-item complete-strong" href="https://meta.wikimedia.org/wiki/List_of_Wikipedias">Complete list</a>                                   
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- sidebar menu bitti -->
+            </div>
+
+            <div class="page-main">
+ 
+                <div class="page-top">
+                    <!-- tablar başladı -->
+                    <div class="tabs">
+                        <div class="tabs-left tabs-main">
+                            <div class="tab-wrapper">
+                                <div class="tab-item active-tab">
+                                    <a role="button" class="nav-link active" href="https://en.wikipedia.org/wiki/Main_Page">Main Page</a>
+                                </div>
+                            </div>
+                            <div class="tab-wrapper">
+                                <div class="tab-item">
+                                    <a role="button" class="nav-link" href="https://en.wikipedia.org/wiki/Talk:Main_Page">Talk</a> 
+                                </div>
+                            </div>                     
+                        </div>
+                        <div class="tabs-right tabs-main">
+                            <div class="tab-wrapper">
+                                <div class="tab-item active-tab">
+                                    <a role="button" class="nav-link active" href="https://en.wikipedia.org/wiki/Main_Page">Read</a>
+                                </div>
+                            </div>
+                            <div class="tab-wrapper">
+                                <div class="tab-item">
+                                    <a role="button" class="nav-link" href="https://en.wikipedia.org/w/index.php?title=Main_Page&action=edit">View Source</a> 
+                                </div>
+                            </div>   
+                            <div class="tab-wrapper">
+                                <div class="tab-item">
+                                    <a role="button" class="nav-link" href="https://en.wikipedia.org/w/index.php?title=Main_Page&action=history">View History</a> 
+                                </div>
+                            </div>                           
+                        </div>                        
+                    </div>
+                    <!-- tablar bitti -->
+
+                    <!-- searchbar başladı -->
+                    <div class="tabs-search">
+                        <form class="search-form js-search-form">
+                            <input placeholder="Search Wikipedia" type="search" class="search-input js-search-input" autofocus />
+                        </form>
+                    </div>   
+                    <!-- searchbar bitti -->
+                    
+                </div>
+
+                <!-- Wikipedia search result alanı başladı -->
+                <div class="search-results js-search-results" id="search-results-area"></div>
+                <!-- Wikipedia search result alanı bitti -->
+
+                <div class="page-bottom" id="page-bottom">
+
+                    <!-- welcome başladı -->
+                    <div class="welcome bottom-sections">
+                        <div class="welcome-left">
+                            <div class="welcome-notification">
+                                <h2>
+                                    Welcome to <a href="https://en.wikipedia.org/wiki/Wikipedia">Wikipedia</a>,
+                                </h2>
+                                <p>
+                                    the <a href="https://en.wikipedia.org/wiki/Free_content">free</a> <a href="https://en.wikipedia.org/wiki/Encyclopedia">encyclopedia</a> that <a href="https://en.wikipedia.org/wiki/Help:Introduction_to_Wikipedia">anyone can edit</a>. <br> <a href="https://en.wikipedia.org/wiki/Special:Statistics">6,427,187</a> articles in <a href="https://en.wikipedia.org/wiki/English_language">English</a> 
+                                </p>
+                            </div>
+                        </div>   
+                        <div class="welcome-right">
+                            <div class="welcome-list">
+                                <div class="welcome-list-part list-one">
+                                    <ul>
+                                        <li class="welcome-list-item"><a href="https://en.wikipedia.org/wiki/Portal:The_arts">The arts</a></li>
+                                        <li class="welcome-list-item"><a href="https://en.wikipedia.org/wiki/Portal:Biography">Biography</a></li>
+                                        <li class="welcome-list-item"><a href="https://en.wikipedia.org/wiki/Portal:Geography">Geography</a></li>
+                                    </ul>
+                                </div>
+                                <div class="welcome-list-part list-two">
+                                    <ul>
+                                        <li class="welcome-list-item"><a href="https://en.wikipedia.org/wiki/Portal:History">History</a></li>
+                                        <li class="welcome-list-item"><a href="https://en.wikipedia.org/wiki/Portal:Mathematics">Mathematics</a></li>
+                                        <li class="welcome-list-item"><a href="https://en.wikipedia.org/wiki/Portal:Science">Science</a></li>
+                                    </ul>
+                                </div>
+                                <div class="welcome-list-part list-three">
+                                    <ul>
+                                        <li class="welcome-list-item"><a href="https://en.wikipedia.org/wiki/Portal:Society">Society</a></li>
+                                        <li class="welcome-list-item"><a href="https://en.wikipedia.org/wiki/Portal:Technology">Technology</a></li>
+                                        <li class="welcome-list-item" style="font-weight: bold;"><a href="https://en.wikipedia.org/wiki/Wikipedia:Contents/Portals">All Portals</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- welcome bitti -->
+
+                    <!-- articles left başladı -->
+                    <div class="updates bottom-sections">
+                        <div class="updates-left articles">
+                            <div class="article-one section-wrappers">
+                                <div class="articles-title bottom-titles">
+                                    <h2>From today's featured article</h2>
+                                </div>
+                                <div class="articles-text section-info">
+                                    <p><a href="https://en.wikipedia.org/wiki/Sesame_Street_research" ><span style="font-style: italic;">Sesame Street</span> research</a> concerns the children's television show <a href="https://en.wikipedia.org/wiki/Sesame_Street"><span style="font-style: italic;">Sesame Street</span></a>, which premiered in 1969. Unlike earlier children's programming, producers used research and more than 1,000 studies and experiments to create the show and test its impact on its young viewers' learning. By the end of the program's first season, the organization founded to oversee Sesame Street production, <a href="https://en.wikipedia.org/wiki/Sesame_Workshop">Children's Television Workshop</a> (CTW), had developed what came to be called the "CTW model": a system of planning, production, and evaluation that combined the expertise of researchers and early childhood educators with that of the program's writers, producers, and directors. CTW utilized independent <a href="https://en.wikipedia.org/wiki/Summative_assessment">summative evaluations</a> conducted by the <a href="https://en.wikipedia.org/wiki/Educational_Testing_Service">Educational Testing Service</a> during the show's first two seasons to measure the program's educational effectiveness. Based on these findings, the researchers compiled a body of data and the producers changed the show accordingly. The <a href="https://en.wikipedia.org/wiki/Formative_assessment">formative research</a> on Sesame Street was the first time children's television viewing was studied scientifically. ( <span style="font-weight: bold;"><a href="https://en.wikipedia.org/wiki/Main_Page">Full article...</a></span>)</p>
+
+                                    <div class="article-bottom article-left">
+                                        <ul>
+                                            <li><p><span style="font-weight: normal;">Recently featured: </span><a href="https://en.wikipedia.org/wiki/Battle_of_Panormus">Battle of PanormusPiano</a></p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Piano_Sonata_No._31_(Beethoven)">Sonata No. 31 (Beethoven)</a></p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Soisc%C3%A9l_Molaisse">Soiscél Molaisse</a></p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="article-bottom article-left">
+                                        <ul>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Today%27s_featured_article/December_2021">Archive</a></p></li>
+                                            <li><p><a href="https://lists.wikimedia.org/postorius/lists/daily-article-l.lists.wikimedia.org/">By email</a></p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Featured_articles">More featured articles</a></p></li>
+                                        </ul>
+                                    </div>                                        
+                                </div> 
+                             
+                            </div>
+                            <div class="article-two section-wrappers">
+                                <div class="articles-title bottom-titles">
+                                    <h2>Did you know ...</h2>
+                                </div>
+                                <div class="articles-text section-info article-two-list">
+                                    <div class="article-portrait">
+                                        <img src="assets/images/article-pic.jpg" alt="">
+                                        <p>William Rounseville Alger</p>
+                                    </div>
+                                    <div class="article-mid">
+                                        <ul>
+                                            <li><p>... that <a href="https://en.wikipedia.org/wiki/William_Rounseville_Alger"><span style="font-weight: bold;">William Rounseville Alger</span></a>'s <span style="font-style: italic;">(pictured)</span>  1857 <a href="https://en.wikipedia.org/wiki/Independence_Day_(United_States)">Fourth of July</a> speech was so controversial that the city of Boston refused to print it for seven years?</p></li>
+                                            <li><p>... that <a href="https://en.wikipedia.org/wiki/Herrscher_des_Himmels,_erh%C3%B6re_das_Lallen,_BWV_248_III"><span style="font-weight: bold; font-style: italic;">Herrscher des Himmels, erhöre das Lallen</span></a>, a <a href="https://en.wikipedia.org/wiki/List_of_church_cantatas_by_liturgical_occasion#Third_Day_of_Christmas_(27_December:_Christmas_3)">Bach cantatafor the Third Day of Christmas</a>, contains the only aria that he newly composed for <a href="https://en.wikipedia.org/wiki/Christmas_Oratorio">the oratorio</a>?</p></li>
+                                            <li><p>... that <a href="https://en.wikipedia.org/wiki/Ponte_Madonna_della_Stella"><span style="font-weight: bold;">the bridge</span></a> from which <a href="https://en.wikipedia.org/wiki/James_Bond_(literary_character)">James Bond</a> leapt in <a href="https://en.wikipedia.org/wiki/No_Time_to_Die"><span style="font-style: italic;">No Time to Die</span></a> is actually an <a href="https://en.wikipedia.org/wiki/Aqueduct_(bridge)">aqueduct</a>?</p></li>
+                                            <li><p>... that despite the support of the British authorities, the multi-racial <a href="https://en.wikipedia.org/wiki/United_Tanganyika_Party"><span style="font-weight: bold;">United Tanganyika Party</span></a> was unsuccessful, with the African-nationalist <a href="https://en.wikipedia.org/wiki/Tanganyika_African_National_Union">TANU</a> winning a majority in the <a href="https://en.wikipedia.org/wiki/1958%E2%80%9359_Tanganyikan_general_election">1958–59 election</a> ?</p></li>
+                                            <li><p>... that Maine state legislator <a href="https://en.wikipedia.org/wiki/Tracy_Quint"><span style="font-weight: bold;">Tracy Quint</span></a> introduced a bill that would have banned all <a href="https://en.wikipedia.org/wiki/COVID-19_vaccine">COVID-19 vaccination</a> mandates in Maine until 2024?</p></li>
+                                            <li><p>... that in 1874, thousands of <a href="https://en.wikipedia.org/wiki/Narodniks">Russian students</a> "<a href="https://en.wikipedia.org/wiki/Going_to_the_People"><span style="font-weight: bold;">[went] to the people</span></a>" in order to agitate the peasantry towards <a href="https://en.wikipedia.org/wiki/Socialism">socialism</a>?</p></li>
+                                            <li><p>... that a 1939 thesis by <a href="https://en.wikipedia.org/wiki/Nathaniel_Fadipe"><span style="font-weight: bold;">Nathaniel Fadipe</span></a>, <span style="font-style: italic;">The Sociology of the Yoruba</span>, was the first sociological study by a black African?</p></li>
+                                            <li><p>... that the original author of <a href="https://en.wikipedia.org/wiki/Half-Life:_Full_Life_Consequences"><span style="font-style: italic; font-weight: bold;">Half-Life: Full Life Consequences</span></a> wanted it to be so bad that "it stands the test of time as one of the worst things ever written"?</p></li>
+                                        </ul> 
+                                    </div>
+                                    <div class="article-bottom article-left">
+                                        <ul>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Recent_additions">Archive</a></p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Help:Your_first_article">Start a new article</a></p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Template_talk:Did_you_know">Nominate an article</a></p></li>
+                                        </ul>
+                                    </div>
+
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- articles left bitti -->
+
+                        <!-- articles right başladı -->
+                        <div class="updates-right news">
+                            <div class="news-one section-wrappers">
+                                <div class="news-title bottom-titles">
+                                    <h2>In the news</h2>
+                                </div>
+                                <div class="news-info section-info">
+                                    <div class="news-portraits">
+                                        <img src="assets/images/news-portrait-1.jpg" alt="">
+                                        <p>Desmond Tutu</p>
+                                    </div>
+                                    <div class="news-one-text">
+                                        <ul>
+                                            <li><p>South African <a href="https://en.wikipedia.org/wiki/Archbishop">archbishop</a> and <a href="https://en.wikipedia.org/wiki/Human_rights">human rights</a> activist <a href="https://en.wikipedia.org/wiki/Desmond_Tutu"><span style="font-weight: bold;">Desmond Tutu</span></a> (<span style="font-style: italic;">pictured</span>) dies at the age of 90.</p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Ariane_flight_VA256">Ariane flight VA256</a>, carrying the <a href="https://en.wikipedia.org/wiki/James_Webb_Space_Telescope"><span style="font-weight: bold;">James Webb Space Telescope</span></a>, is launched from the <a href="https://en.wikipedia.org/wiki/Guiana_Space_Centre">Guiana Space Centre</a>.</p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/2021_Bangladesh_ferry_fire"><span style="font-weight: bold;">A ferry fire</span></a> in Bangladesh kills at least 40 people.</p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/December_2021_Malaysian_floods"><span style="font-weight: bold;">Floods in Malaysia</span></a> leave at least 46 people dead and displace more than 68,000 others.</p></li>
+                                            <li><p>At least 85 people are killed in a <a href="https://en.wikipedia.org/wiki/2021_Madagascar_shipwreck"><span style="font-weight: bold;">shipwreck</span></a> off the coast of Madagascar.</p></li>
+                                        </ul>
+
+                                        <div class="article-bottom article-right">
+                                            
+                                            <p><a href="https://en.wikipedia.org/wiki/Portal:Current_events"><span style="font-weight: bold;">Ongoing</span></a>: <a href="https://en.wikipedia.org/wiki/COVID-19_pandemic">COVID-19 pandemic</a></p>
+                                            <ul style="padding-left: 0;">
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Deaths_in_2021">Recent deaths</a>: </p></li>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Thomas_Kinsella">Thomas Kinsella</a></p></li>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Sarah_Weddington">Sarah Weddington</a></p></li>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Janice_Long">Janice Long</a></p></li>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Frans_Lebu_Raya">Frans Lebu Raya</a></p></li>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Poh_Lip_Meng">Poh Lip Meng</a></p></li>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Madhur_Kapila">Madhur Kapila</a></p></li>
+                                            </ul>
+                                        <p style="text-align: right;"><a href="https://en.wikipedia.org/wiki/Wikipedia:In_the_news/Candidates"><span style="font-weight: bold;">Nominate an article</span></a></p>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="news-two section-wrappers">
+                                <div class="news-title bottom-titles">
+                                    <h2>On this day</h2>
+                                </div>
+                                <div class="news-info section-info">
+                                    <div class="news-portraits">
+                                        <img src="assets/images/news-portrait-2.jpg" alt="">
+                                        <p>Constance Markievicz</p>
+                                    </div>
+                                    <div class="news-two-text">
+                                        <p><a href="https://en.wikipedia.org/wiki/December_28"><span style="font-weight: bold;">December 28</span></a>: <a href="https://en.wikipedia.org/wiki/Proclamation_Day">Proclamation Day</a> in <a href="https://en.wikipedia.org/wiki/South_Australia">South Australia</a> (<a href="https://en.wikipedia.org/wiki/1836">1836</a>)</p>
+                                        <ul>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/1767">1767</a> - <a href="https://en.wikipedia.org/wiki/Taksin"><span style="font-weight: bold;">Taksin the Great</span></a> was crowned king of the newly established <a href="https://en.wikipedia.org/wiki/Thonburi_Kingdom">Thonburi Kingdom</a> at the new capital of <a href="https://en.wikipedia.org/wiki/Thonburi">Thonburi</a> in present-day Thailand.</p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/1832">1832</a> - <a href="https://en.wikipedia.org/wiki/John_C._Calhoun"><span style="font-weight: bold;">John C. Calhoun</span></a> became the first <a href="https://en.wikipedia.org/wiki/Vice_President_of_the_United_States">vice president of the United States</a> to resign.</p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/1918">1918</a> - Irishwoman <a href="https://en.wikipedia.org/wiki/Constance_Markievicz"><span style="font-weight: bold;">Constance Markievicz</span></a> (<span style="font-style: italic;">pictured</span>) <a href="https://en.wikipedia.org/wiki/1918_Irish_general_election">was elected</a> to the <a href="https://en.wikipedia.org/wiki/House_of_Commons_of_the_United_Kingdom">House of Commons</a> as the first female British member of Parliament, although she <a href="https://en.wikipedia.org/wiki/Abstentionism">never took her seat</a>.</p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/1943">1943</a> - <a href="https://en.wikipedia.org/wiki/World_War_II">World War II</a>: After eight days of brutal <a href="https://en.wikipedia.org/wiki/Urban_warfare">house-to-house fighting</a>, the <a href="https://en.wikipedia.org/wiki/1st_Canadian_Division">1st Canadian Infantry Division</a> <a href="https://en.wikipedia.org/wiki/Battle_of_Ortona"><span style="font-weight: bold;">captured the town of Ortona, Italy</span></a>.</p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/2011">2011</a> - <a href="https://en.wikipedia.org/wiki/Kurdish%E2%80%93Turkish_conflict_(1978%E2%80%93present)">Kurdish-Turkish conflict</a>: Acting on information that <a href="https://en.wikipedia.org/wiki/Kurds">Kurdish</a> militants were crossing the border from Iraqi territory, two Turkish <a href="https://en.wikipedia.org/wiki/General_Dynamics_F-16_Fighting_Falcon">F-16</a> jets <a href="https://en.wikipedia.org/wiki/Roboski_massacre"><span style="font-weight: bold;">fired at a group of villagers</span></a>, killing 34 people.</p></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="article-bottom">
+                                        <div>
+                                            <ul>
+                                                <li><p style="font-weight: normal;">More anniversaries: <a href="https://en.wikipedia.org/wiki/December_27">December 27</a></p></li>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/December_28">December 28</a></p></li>
+                                                <li><p style="font-weight: normal;"><a href="https://en.wikipedia.org/wiki/December_29">December 29</a></p></li>
+                                            </ul>                                            
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Andrea_Gritti">Andrea Gritti</a> (d. 1538) </p></li>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Shen_Congwen">Shen Congwen</a> (b. 1902) </p></li>
+                                                <li><p><a href="https://en.wikipedia.org/wiki/Barbara_Judge">Barbara Judge</a> (b. 1946)</p></li>
+                                            </ul>                                            
+                                        </div>
+
+                                    </div>                                      
+                                    <div class="article-bottom article-left">
+                                        <ul>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Selected_anniversaries/December">Archive</a> </p></li>
+                                            <li><p><a href="https://lists.wikimedia.org/postorius/lists/daily-article-l.lists.wikimedia.org/">By email</a></p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/List_of_days_of_the_year">List of days of the year</a></p></li>
+                                        </ul>
+                                    </div>
+                                  
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- articles right bitti -->
+                    </div>
+
+                    <!-- features başladı-->
+                    <div class="features bottom-sections">
+                        <div class="section-wrappers">
+                            <div class="features-title bottom-titles">
+                                <h2>Today's featured picture</h2>
+                            </div>     
+                            <div class="features-bottom section-info">
+                                <div class="features-img">
+                                    <img src="assets/images/features-img.jpg" alt="">
+                                </div>
+                                <div class="features-text">
+                                    <div class="features-article">
+
+                                    </div>
+                                    <p><a href="https://en.wikipedia.org/wiki/Wat_Phra_Si_Rattana_Mahathat"><span style="font-weight: bold;">Wat Phra Si Rattana Mahathat</span></a> (Temple of the Great Jewelled Reliquary), colloquially referred to as Wat Phra Si or Wat Yai, is a Buddhist temple (<a href="https://en.wikipedia.org/wiki/Thai_temple_art_and_architecture"><span style="font-style: italic;">wat</span></a>) in <a href="https://en.wikipedia.org/wiki/Phitsanulok_province">Phitsanulok Province</a>, Thailand. It is located on the east bank of the <a href="https://en.wikipedia.org/wiki/Nan_River">Nan River</a>, near Naresuan Bridge. The temple is famous for its gilded statue of the <a href="https://en.wikipedia.org/wiki/Gautama_Buddha">Buddha</a>, shown in this photograph. The statue is considered to be one of the most beautiful and classically magnificent figures of the Buddha in Thailand, and worthy of the highest respect among the Thai people.</p>
+                                    <p>Photograph credit: <a href="https://en.wikipedia.org/wiki/User:Supanut_Arunoprayote">Supanut Arunoprayote</a></p>
+                                    <div class="article-bottom">
+                                        <ul>
+                                            <li><p><span style="font-weight: normal;">Recently featured:</span> <a href="https://en.wikipedia.org/wiki/Template:POTD/2021-12-27"> South-western black rhinoceros</a></p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Template:POTD/2021-12-26">Santo Stanislao dei Polacchi</a></p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Template:POTD/2021-12-25">Melun Diptych</a></p></li>
+                                        </ul>
+                                    </div>
+                                    <div class="article-bottom">
+                                        <ul>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Picture_of_the_day/Archive">Archive</a></p></li>
+                                            <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Featured_pictures">More featured pictures</a></p></li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+
+                            </div>                       
+                        </div>
+                    </div>
+                    <!-- features bitti -->
+
+                    <!-- other areas başladı -->
+                    <div class="other-areas bottom-sections">
+                        <div class="other-areas-list section-wrappers">
+                            <div class="other-areas-title bottom-titles">
+                                <h2>Other areas of Wikipedia</h2>
+                            </div>
+                            <div class="other-areas-text section-info">
+                                <ul>
+                                    <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Community_portal"><span style="font-weight: bold;">Community portal</span></a> - Bulletin board, projects, resources and activities covering a wide range of Wikipedia areas.</p></li>
+                                    <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Help_desk"><span style="font-weight: bold;">Help desk</span></a> - Ask questions about using Wikipedia.</p></li>
+                                    <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Reference_desk"><span style="font-weight: bold;">Reference desk</span></a> - Serving as virtual librarians, Wikipedia volunteers tackle your questions on a wide range of subjects.</p></li>
+                                    <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:News"><span style="font-weight: bold;">Site news</span></a> - Announcements, updates, articles and press releases on Wikipedia and the Wikimedia Foundation.</p></li>
+                                    <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Teahouse"><span style="font-weight: bold;">Teahouse</span></a> - To ask your first basic questions about contributing to Wikipedia.</p></li>
+                                    <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Village_pump"><span style="font-weight: bold;">Village pump</span></a> - For discussions about Wikipedia itself, including areas for technical issues and policies.</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="sister-projects section-wrappers">
+                            <div class="sister-projects-title bottom-titles">
+                                <h2>Wikipedia's sister projects</h2>
+                            </div>
+                            <div class="sister-projects-text section-info">
+                                <div class="projects-highlight">
+                                    <p>Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects:</p>
+                                </div>
+                                <div class="projects-all">
+                                    <div class="projects-left project-item">
+                                        <div class="single-project">
+                                            <div class="project-img commons-page">
+                                                <a href="https://commons.wikimedia.org/wiki/Main_Page"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/4a/Commons-logo.svg/31px-Commons-logo.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://commons.wikimedia.org/wiki/Main_Page">Commons</a></p></div>
+                                                <div class="project-text"><p>Free media repository</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="single-project">
+                                            <div class="project-img wikibooks-page">
+                                                <a href="https://en.wikibooks.org/wiki/Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikibooks-logo.svg/35px-Wikibooks-logo.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://en.wikibooks.org/wiki/Main_Page">Wikibooks</a></p></div>
+                                                <div class="project-text"><p>Free textbooks and manuals</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="single-project">
+                                            <div class="project-img wikiquote-page">
+                                                <a href="https://en.wikiquote.org/wiki/Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Wikiquote-logo.svg/35px-Wikiquote-logo.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://en.wikiquote.org/wiki/Main_Page">Wikiquote</a></p></div>
+                                                <div class="project-text"><p>Collection of quations</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="single-project">
+                                            <div class="project-img wikiversity-page">
+                                                <a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Wikiversity_logo_2017.svg/41px-Wikiversity_logo_2017.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://en.wikiversity.org/wiki/Wikiversity:Main_Page">Wikiversity</a></p></div>
+                                                <div class="project-text"><p>Free learning tools</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-mid project-item">
+                                        <div class="single-project">
+                                            <div class="project-img mediawiki-page">
+                                                <a href="https://www.mediawiki.org/wiki/MediaWiki"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/MediaWiki-2020-icon.svg/35px-MediaWiki-2020-icon.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="">MediaWiki</a></p></div>
+                                                <div class="project-text"><p>Wiki software developement</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="single-project">
+                                            <div class="project-img wikidata-page">
+                                                <a href="https://www.wikidata.org/wiki/Wikidata:Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Wikidata-logo.svg/47px-Wikidata-logo.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://www.wikidata.org/wiki/Wikidata:Main_Page">Wikidata</a></p></div>
+                                                <div class="project-text"><p>Free knowledge base</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="single-project">
+                                            <div class="project-img wikisource-page">
+                                                <a href="https://en.wikisource.org/wiki/Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wikisource-logo.svg/35px-Wikisource-logo.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://en.wikisource.org/wiki/Main_Page">Wikisource</a></p></div>
+                                                <div class="project-text"><p>Free-content library</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="single-project">
+                                            <div class="project-img wikivoyage-page">
+                                                <a href="https://en.wikivoyage.org/wiki/Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Wikivoyage-Logo-v3-icon.svg/35px-Wikivoyage-Logo-v3-icon.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://en.wikivoyage.org/wiki/Main_Page">Wikivoyage</a></p></div>
+                                                <div class="project-text"><p>Free travel guide</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="projects-right project-item">
+                                        <div class="single-project">
+                                            <div class="project-img metawiki-page">
+                                                <a href="https://meta.wikimedia.org/wiki/Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Wikimedia_Community_Logo.svg/35px-Wikimedia_Community_Logo.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://meta.wikimedia.org/wiki/Main_Page">Meta-Wiki</a></p></div>
+                                                <div class="project-text"><p>Wikimedia project coordination</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="single-project">
+                                            <div class="project-img wikinews-page">
+                                                <a href="https://en.wikinews.org/wiki/Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Wikinews-logo.svg/51px-Wikinews-logo.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://en.wikinews.org/wiki/Main_Page">Wikinews</a></p></div>
+                                                <div class="project-text"><p>Free-content news</p> </div>
+                                            </div>
+                                        </div>
+                                        <div class="single-project">
+                                            <div class="project-img wikispecies-page">
+                                                <a href="https://species.wikimedia.org/wiki/Main_Page"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wikispecies-logo.svg/35px-Wikispecies-logo.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://species.wikimedia.org/wiki/Main_Page">Wikispecies</a></p></div>
+                                                <div class="project-text"><p>Directory of species</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="single-project">
+                                            <div class="project-img wictionary-page">
+                                                <a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/06/Wiktionary-logo-v2.svg/35px-Wiktionary-logo-v2.svg.png" alt=""></a>
+                                            </div>
+                                            <div class="project-info">
+                                                <div class="project-title"><p><a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page">Wiktionary</a></p></div>
+                                                <div class="project-text"><p>Dictionary and thesaurus</p></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>  
+                        <div class="wikipedia-languages section-wrappers">
+                            <div class="wikipedia-languages-title bottom-titles">
+                                <h2>Wikipedia languages</h2>
+                            </div>
+                            <div class="wikipedia-languages-info section-info">
+                                <div class="languages-one">
+                                    <div class="one-inner">
+                                        <p>This Wikipedia is written in English. Many other Wikipedias are available; some of the largest are listed below.</p>
+                                    </div>
+                                </div>
+                                <div class="languages-border">
+                                    <div class="border-wrapper">
+                                        <div class="border-line"></div>
+                                        <div class="border-text">
+                                            <p>1,000,000+ articles</p>
+                                        </div>
+                                        <div class="border-line"></div>
+                                    </div>
+                                </div>
+                                <div class="languages-two countries">
+                                    <ul>
+                                        <li class="countries-item-top"><p><a href="">Arabic</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Deutsch</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Español</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Français</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Italiano</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Nederlands</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">日本語</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Polski</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Português</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Русский</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Svenska</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Українська</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Tiếng</a></p></li>
+                                        <li class="countries-item-top"><p><a href="">Việt中文</a></p></li> 
+                                    </ul>
+                                </div>
+                                <div class="languages-border">
+                                    <div class="border-wrapper">
+                                        <div class="border-line"></div>
+                                        <div class="border-text">
+                                            <p>250,000+ articles</p>
+                                        </div>
+                                        <div class="border-line"></div>
+                                    </div>
+                                </div>                                
+                                <div class="languages-three countries">
+                                    <ul>
+                                        <li class="countries-item-mid"><p><a href="">Bahasa Indonesia</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Bahasa Melayu</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Bân-lâm-gú</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Български</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Català</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Čeština</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Dansk</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Esperanto</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Euskara</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">فارسی</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">עברית</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">한국어</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Magyar</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Norsk Bokmål</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Română</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Srpski</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Srpskohrvatski</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Suomi</a></p></li>
+                                        <li class="countries-item-mid"><p><a href="">Türkçe</a></p></li>
+                                    </ul>
+                                </div>
+                                <div class="languages-border">
+                                    <div class="border-wrapper">
+                                        <div class="border-line"></div>
+                                        <div class="border-text">
+                                            <p>50,000+ articles</p>
+                                        </div>
+                                        <div class="border-line"></div>
+                                    </div>
+                                </div>                                
+                                <div class="languages-four countries">
+                                    <ul>
+                                        <li class="countries-item-bottom"><p><a href="">Asturianu</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Bosanski</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Eesti</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Ελληνικά</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Simple English</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Galego</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Hrvatski</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Latviešu</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Lietuvių</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">മലയാളം</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Македонски</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Norsk nynorsk</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Shqip</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Slovenčina</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">Slovenščina</a></p></li>
+                                        <li class="countries-item-bottom"><p><a href="">ไทย</a></p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>                                             
+                    </div>
+                    <!-- other areas bitti -->
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-top">
+                <div class="copyright">
+                    <p>Text is available under the <a href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License">Creative Commons Attribution-ShareAlike License</a>; additional terms may apply. By using this site, you agree to the <a href="https://foundation.wikimedia.org/wiki/Terms_of_Use/en">Terms of Use</a> and <a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy Policy</a>. Wikipedia® is a registered trademark of the <a href="https://wikimediafoundation.org/">Wikimedia Foundation, Inc.</a>, a non-profit organization.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-bottom-text">
+                    <ul>
+                        <li><p><a href="https://foundation.wikimedia.org/wiki/Privacy_policy">Privacy policy</a></p></li>
+                        <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</a></p></li>
+                        <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:General_disclaimer">Disclaimers</a></p></li>
+                        <li><p><a href="https://en.wikipedia.org/wiki/Wikipedia:Contact_us">Contact Wikipedia</a></p></li>
+                        <li><p><a href="https://en.m.wikipedia.org/wiki/Main_Page">Mobile view</a></p></li>
+                        <li><p><a href="https://www.mediawiki.org/wiki/How_to_contribute">Developers</a></p></li>
+                        <li><p><a href="https://stats.wikimedia.org/#/en.wikipedia.org">Statistics</a></p></li>
+                        <li><p><a href="https://foundation.wikimedia.org/wiki/Cookie_statement">Cookie statement</a></p></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-bottom-logo">
+                    <div class="footer-logo-left">
+                        <a href="https://wikimediafoundation.org/"><img src="https://en.wikipedia.org/static/images/footer/wikimedia-button.png" alt=""></a>
+                </div>
+                    <div class="footer-logo-right">
+                        <a href="https://www.mediawiki.org/wiki/MediaWiki"><img src="https://en.wikipedia.org/static/images/footer/poweredby_mediawiki_88x31.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+    
+    <script>
+
+        // Modal'ın açılıp kapanması başladı
+        // Modal & btn
+        var modal = document.getElementById('languages-modal');
+        var btn = document.getElementById('modalBtn');
+
+        // Close span
+        var span = document.getElementsByClassName("close")[0];
+
+        // Open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+
+        // close the modal with span x
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+
+        // Close the modal with outside click
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+            }
+        }
+        // Modal'ın açılıp kapanması bitti
+
+        // Modal'ın içindeki buttonlar ve menüler başladı
+        // Buttonlar
+        var languageBtn = document.getElementById('language-btn');
+        var fontBtn = document.getElementById('font-btn');
+        var displayBtn = document.getElementById('displayBtn');
+        var inputBtn = document.getElementById('inputBtn');
+
+        // Menüler
+        var optionLang = document.getElementById('option-language');
+        var optionText = document.getElementById('option-text');
+        var optionSettings = document.getElementById('option-settings');
+
+
+        languageBtn.onclick = function() {
+            console.log('language btn here');
+            optionLang.style.display = "block";
+            optionText.style.display = "none";
+            optionSettings.style.display ="none";
+            languageBtn.classList.add("selected-button-option");
+            fontBtn.classList.remove("selected-button-option");
+        }
+
+        fontBtn.onclick = function() {
+            console.log('font btn here');
+            optionLang.style.display = "none";
+            optionText.style.display = "block";
+            optionSettings.style.display ="none";
+            languageBtn.classList.remove("selected-button-option");
+            fontBtn.classList.add("selected-button-option");
+        }
+
+        displayBtn.onclick = function() {
+            console.log('display btn here');
+            optionLang.style.display = "block";
+            optionText.style.display = "none";
+            optionSettings.style.display ="none";
+            inputBtn.classList.remove("selected-button");
+            displayBtn.classList.add("selected-button");
+        }
+
+        inputBtn.onclick = function() {
+            console.log('input btn here');
+            optionLang.style.display = "none";
+            optionText.style.display = "none";
+            optionSettings.style.display ="block";
+            displayBtn.classList.remove("selected-button");
+            inputBtn.classList.add("selected-button");
+        }
+
+        // Modal'ın içindeki buttonlar ve menüler bitti
+
+        // Wikipedia Search başladı
+        var pageBottom = document.getElementById('page-bottom');
+        var searchResults = document.getElementById('search-results-area');
+
+        async function handleSubmit(event) {
+        event.preventDefault();
+        const inputValue = document.querySelector('.js-search-input').value;
+        const searchQuery = inputValue.trim();
+
+        try {
+            const results = await searchWikipedia(searchQuery);
+            pageBottom.style.display ="none";
+            searchResults.style.display = "block";
+            displayResults(results);
+        } catch (err) {
+            console.log(err);
+            alert('Failed to search wikipedia');
+        }
+        }
+
+        async function searchWikipedia(searchQuery) {
+        const endpoint = `https://en.wikipedia.org/w/api.php?action=query&list=search&prop=info&inprop=url&utf8=&format=json&origin=*&srlimit=20&srsearch=${searchQuery}`;
+        const response = await fetch(endpoint);
+        if (!response.ok) {
+            throw Error(response.statusText);
+        }
+        const json = await response.json();
+        return json;
+        }
+
+        function displayResults(results) {
+        const searchResults = document.querySelector('.js-search-results');
+
+        results.query.search.forEach(result => {
+            const url = `https://en.wikipedia.org/?curid=${result.pageid}`;
+
+            searchResults.insertAdjacentHTML(
+            'beforeend',
+            `<div class="result-item">
+                <h3 class="result-title">
+                <p><a href="${url}" target="_blank" rel="noopener">${result.title}</a></p>
+                </h3>
+                <p class="result-text"><a href="${url}" class="result-link" target="_blank" rel="noopener">${url}</a></p>
+                <span class="result-snippet">${result.snippet}</span><br>
+            </div>`
+            );
+        });
+        }
+
+
+        const form = document.querySelector('.js-search-form');
+        form.addEventListener('submit', handleSubmit);        
+
+
+        // Wikipedia Search bitti
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+.header {
+
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background: white;
+
+    &-main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &-top {
+        width: 45%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: baseline;
+        text-align: right;   
+        
+            .header-list {
+                width: 100%;
+                text-align: right;
+
+                .profile-icon {
+                width: $header-font-size;
+                height: $header-font-size;
+                color: $text-color;
+                display: inline-block;
+                background-image: url("../assets/images/user_icon.svg");
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                }
+            }          
+
+            a {
+                color: $link-color;
+                font-size: $header-font-size;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+                
+                & + a {
+                    margin-left: 5px;
+                }
+                 
+            }  
+            
+ 
+            
+            }  
+
+        &-bottom {
+            display: none;
+            justify-content: flex-end;
+            margin-top: 15px;
+
+            .search-wrapper {
+                width: 20%;
+                margin:3px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+
+                input {
+                    width: 100%;
+                    height: 2.15384615em;
+                    border: 1px solid #a2a9b1;
+                    border-radius: 2px;
+                    padding: 2px 4px;
+                    font-family: inherit;
+                    font-size: 0.8125em;
+
+                    :focus {
+                        outline: 0;
+                        border-color: #3366cc;
+                        box-shadow: inset 0 0 0 1px #3366cc;
+                        }
+                    }
+                }
+
+                .search-button {
+                    width: 30px;
+                    height: auto;
+                    display: inline-block;
+                    position: absolute;
+
+                    .fas {
+                        text-align: center;
+                        opacity: 0.67;
+                        }
+                    }
+            }
+    }
+}   
