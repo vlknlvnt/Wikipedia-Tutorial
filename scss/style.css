@@ -141,6 +141,10 @@
   background-color: #f6f6f6;
 }
 
+.sidebar-toggle {
+  display: none;
+}
+
 .page-wrapper .sidebar {
   width: 14%;
   margin-top: -38px;
@@ -1329,6 +1333,14 @@ body {
     padding-left: 0;
   }
 
+  .page-wrapper .sidebar .sidebar-info-inner .info-tab {
+    padding: 0.25em 0.6em 0 0;
+  }
+
+  .border-wrapper .border-text p {
+    padding: 0 0.3em;
+  }
+
 } 
 
 @media screen and (max-width: 992px) {
@@ -1378,9 +1390,41 @@ body {
     padding-left: 0;
   }
 
+  /* sidebar position değişsin ve yanda gizli kalsın */
   .page-wrapper .sidebar {
-    display: none;
+    position: absolute;
+    top: 2em;
+    left: -20%;
+    background: #edecec;
+    z-index: 99;
+    width: 20%;
+    padding-left: 0.5em;
+    padding-bottom: 1em;
+    border-radius: 0.3em;
+    transition: 0.2s;
+}
+
+  .sidebar-toggle {
+    display: block;
+    position: absolute;
+    top: 0.7em;
+    width: auto;
+    left: 100%;
+    background-color: #edecec;
   }
+
+  .sidebar-toggle-btn {
+    display: block;
+    padding: 0.2em;
+    border:none;
+  }
+
+  .sidebar-open {
+    left: 0;
+    margin-left: 20%;
+    transition: 0.2s;
+  }
+
   /* tab alanı eşit şekilde bölünsün */
   .middle-section .page-wrapper .page-top .tabs {
     width: 100%;
@@ -1440,6 +1484,19 @@ body {
   .middle-section .page-wrapper .page-top .tabs-search input {
     width: 70%;
   }
+
+  .page-wrapper .sidebar {
+    position: absolute;
+    top: 2em;
+    left: -30%;
+    width: 30%;
+    padding-left: 0.5em;
+    padding-bottom: 1em;
+}
+
+  .sidebar-open {
+    margin-left: 30%;
+  }  
 
   .search-results {
     margin-top: 2.7em;
@@ -1509,5 +1566,78 @@ body {
     padding: 2.25em;
   }
 }
+@media screen and (max-width: 475px) {
+  .page-wrapper .sidebar {
+    position: absolute;
+    top: 2em;
+    left: -35%;
+    width: 35%;
+    padding-left: 0.5em;
+    padding-bottom: 1em;
+  }
+
+  .sidebar-open {
+    margin-left: 35%;
+  }  
+}
+
+/* modal resposnsive başladı */
+@media screen and (max-width: 1024px) {
+  .languages-modal .modal-wrapper {
+    width: 30em;
+    top: 5em;
+    left: 10em;
+    padding: 1em;
+  }
+
+  .languages-modal .modal-wrapper .modal-top {
+    flex-direction: column;
+  }
+
+  .close-modal {
+    left: 96%;
+  }
+
+  .modal-left {
+    width: 100%;
+  }
+
+  .modal-right {
+    width: 100%;
+  }
+
+  .settings-options {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+@media screen and (max-width: 768px) {
+  .languages-modal .modal-wrapper {
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .languages-modal .modal-wrapper {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 475px) { 
+  .settings-options {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  .button-options-mid {
+    width: auto;
+  }
+
+  .close-modal {
+    left: 95%;
+  }
+}
+/* modal resposnsive bitti */
 
 /* responsive bitti */
